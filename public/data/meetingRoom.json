@@ -1,0 +1,34 @@
+{
+    "rooms": [
+        {
+            "id": 1,
+            "name": "Conference Room A",
+            "capacity": 8,
+            "timeSlots": {
+                "startTime": ["09:00 AM", "09:31 AM", "10:01 AM"],
+                "endTime": ["09:30 AM", "10:00 AM", "10:30 AM"],
+                "availability": [true, true, true]
+            }
+        },
+        {
+            "id": 2,
+            "name": "Conference Room B",
+            "capacity": 6,
+            "timeSlots": {
+                "startTime": ["09:00 AM", "09:31 AM", "10:01 AM"],
+                "endTime": ["09:30 AM", "10:00 AM", "10:30 AM"],
+                "availability": [true, true, true]
+            }
+        },
+        {
+            "id": 3,
+            "name": "Conference Room C",
+            "capacity": 10,
+            "timeSlots": {
+                "startTime": ["09:00 AM", "09:31 AM", "10:01 AM"],
+                "endTime": ["09:30 AM", "10:00 AM", "10:30 AM"],
+                "availability": [true, true, true]
+            }
+        }
+    ]
+}
