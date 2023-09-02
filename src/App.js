@@ -1,13 +1,15 @@
 import './App.css';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 
-import { HomePage, InvalidPage } from './components'
+import { Booking, HomePage, InvalidPage, Navbar } from './components'
 
 function App() {
   return (
     <Router>
+      <Navbar />
       <Routes>
         <Route exact path='/' element={<HomePage />}/>
+        <Route path='/booking' element={<Booking />}/>
         <Route path='*' element={<InvalidPage />}/>
       </Routes>
     </Router>

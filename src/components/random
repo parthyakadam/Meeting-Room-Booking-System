@@ -1,0 +1,74 @@
+<div className="row">
+            <div className="col-sm-4 mb-3 mb-sm-0">
+                <div className="card">
+                <div className="card-body">
+                    <h3 className="card-title">
+                        {rooms[0].name}
+                    </h3>
+                    <h5>Room Details </h5>
+                    <h6>Room ID: <span>{rooms[0].id}</span></h6> 
+                    <h6>Capacity: <span>{rooms[0].capacity}</span></h6> 
+                    <h4>
+                        {rooms[0].timeSlots.availability.some((timeSlot) => timeSlot === true)
+                        === true ? (
+                                    <span> Meeting Room Available</span>
+                                ) : (
+                                    <span> Room unavailable</span>
+                                )
+                            }
+                    </h4>
+                    <div className="d-grid col-6 mx-auto">
+                    <button type="button" className="btn btn-primary">Book Meeting Slot</button>
+                    </div>
+                </div>
+                </div>
+            </div>
+            <div className="col-sm-4">
+                <div className="card">
+                    <div className="card-body">
+                        <h3 className="card-title">
+                            {rooms[0].name}
+                        </h3>
+                        <h5>Room Details </h5>
+                        <h6>Room ID: <span>{rooms[1].id}</span></h6> 
+                        <h6>Capacity: <span>{rooms[1].capacity}</span></h6> 
+                        <h4>
+                            {rooms[1].timeSlots.availability.some((timeSlot) => timeSlot === true)
+                            === true ? (
+                                        <span> Meeting Room Available</span>
+                                    ) : (
+                                        <span> Room unavailable</span>
+                                    )
+                                }
+                        </h4>
+                        <div className="d-grid col-6 mx-auto">
+                        <button type="button" className="btn btn-primary">Book Meeting Slot</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div className="col-sm-4">
+                <div className="card">
+                    <div className="card-body">
+                        <h3 className="card-title">
+                            {rooms[2].name}
+                        </h3>
+                        <h5>Room Details </h5>
+                        <h6>Room ID: <span>{rooms[2].id}</span></h6> 
+                        <h6>Capacity: <span>{rooms[2].capacity}</span></h6> 
+                        <h4>
+                            {rooms[2].timeSlots.availability.some((timeSlot) => timeSlot === true)
+                            === true ? (
+                                        <span> Meeting Room Available</span>
+                                    ) : (
+                                        <span> Room unavailable</span>
+                                    )
+                                }
+                        </h4>
+                        <div className="d-grid col-6 mx-auto">
+                        <button type="button" className="btn btn-primary">Book Meeting Slot</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
